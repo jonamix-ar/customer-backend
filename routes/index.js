@@ -4,7 +4,7 @@ const consultationController = require("../controllers/consultationController");
 const verifyToken = require("../middlewares/validate-token");
 
 // Rutas de pruebas
-app.get("/", (req, res) => {
+router.get("/", (req, res) => {
   // Accede a la variable de entorno VERSION
   const version = process.env.VERSION;
 
